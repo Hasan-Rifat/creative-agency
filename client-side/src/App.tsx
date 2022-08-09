@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import auth from "./firebase.init";
-import Header from "./Components/Header";
+import Header from "./Components/shared/Header/Header";
 
 function App() {
   console.log(auth);
