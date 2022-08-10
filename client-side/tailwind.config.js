@@ -25,13 +25,6 @@ module.exports = {
       maxmd: { max: "768px" },
     },
   },
-  daisyui: {
-    themes: [
-      {
-        mytheme: {},
-      },
-    ],
-  },
 
   plugins: [require("daisyui")],
 };

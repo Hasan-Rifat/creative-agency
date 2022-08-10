@@ -5,9 +5,9 @@ type BannerProps = {};
 
 const Banner: React.FC<BannerProps> = () => {
   return (
-    <section>
+    <section className="bg-[#fbd062]">
       <div className="w-[1200px]  mx-auto py-[28px] pt-[141px] pb-[106px]">
-        <div className="grid grid-cols-5 ">
+        <div className="grid grid-cols-5 gap-[120px] items-center">
           <div className="col-span-2">
             <h2 className="text-[48px] leading-[60px] font-bold text-primary">
               Let’s Grow Your Brand To The Next Level
@@ -21,11 +21,7 @@ const Banner: React.FC<BannerProps> = () => {
             </button>
           </div>
           <div className="col-span-3 ">
-            <img
-              className="ml-auto w-[624.6px] h-[422.8px]"
-              src={image}
-              alt=""
-            />
+            <img className=" w-[624.6px] h-[422.8px]" src={image} alt="" />
           </div>
         </div>
       </div>
