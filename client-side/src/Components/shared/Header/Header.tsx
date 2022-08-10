@@ -28,13 +28,13 @@ const Header: React.FC = () => {
     </>
   );
   return (
-    <header className="bg-secondary">
-      <div className="w-[1169px] mx-auto py-[28px]">
+    <header className="sticky top-0">
+      <div className="w-[1200px] mx-auto py-[28px]">
         <div>
           <div className="navbar bg-base-100">
             <div className="flex-1">
               <Link to={"/"}>
-                <a className="btn btn-ghost normal-case text-xl">
+                <a>
                   <img src={logo} className="w-[150px]" alt="" />
                 </a>
               </Link>
