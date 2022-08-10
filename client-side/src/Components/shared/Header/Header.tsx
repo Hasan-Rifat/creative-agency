@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../img/logo.png";
+import logo from "../../../images/logos/logo.png";
 import ActiveLink from "../ActiveLink/ActiveLink";
 
 // type HeaderProps = { children?: Element; to?: string };
