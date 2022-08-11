@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../images/logos/logo.png";
 import ActiveLink from "../ActiveLink/ActiveLink";
@@ -6,6 +6,20 @@ import ActiveLink from "../ActiveLink/ActiveLink";
 // type HeaderProps = { children?: Element; to?: string };
 
 const Header: React.FC = () => {
+  // background color
+
+  const [color, setColor] = useState<boolean>(false);
+
+  const changeBg = () => {
+    if (window.scrollY <= 90) {
+      return setColor(true);
+    } else {
+      return setColor(false);
+    }
+  };
+  window.addEventListener("scroll", changeBg);
+
+  // menu
   const menu: JSX.Element = (
     <>
       <li className="mr-[10px] p-[10px]">
@@ -26,8 +40,12 @@ const Header: React.FC = () => {
     </>
   );
   return (
-    <header className="mt-[-144px] sticky top-0 bg-transparent">
-      <div className="w-[1200px] mx-auto py-[28px] bg-transparent">
+    <header
+      className={`fixed left-0 right-0 top-0 ${
+        color ? "bg-transparent" : "bg-white"
+      }`}
+    >
+      <div className="w-[1200px] mx-auto bg-transparent">
         <div>
           <div className="navbar ">
             <div className="flex-1">
