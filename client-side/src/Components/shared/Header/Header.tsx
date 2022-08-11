@@ -34,7 +34,7 @@ const Header: React.FC = () => {
       <li className="mr-[10px] p-[10px]">
         <ActiveLink to={"/contact-us"}>Contact Us</ActiveLink>
       </li>
-      <button className="rounded-[5px] mr-[10px] px-[47px] py-[10px] text-white bg-primary  transition-none">
+      <button className="rounded-[5px] mr-[10px] px-[47px] py-[10px] text-white bg-primary  transition-none hover:bg-secondary">
         Login
       </button>
     </>
