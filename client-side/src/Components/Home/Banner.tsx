@@ -9,11 +9,11 @@ const Banner: React.FC<BannerProps> = () => {
     <section
       style={{
         backgroundImage: `url(${bg})`,
-        /* backgroundRepeat: "no-repeat",
-        backgroundPosition: "top right",
-        backgroundSize: "cover", */
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center center",
+        // backgroundSize: "cover",
       }}
-      className={``}
+      className={`bg-[#fbd062]`}
     >
       <div className="w-[1200px]  mx-auto py-[28px] pt-[141px] pb-[106px]">
         <div className="grid grid-cols-5 gap-[120px] items-end">
