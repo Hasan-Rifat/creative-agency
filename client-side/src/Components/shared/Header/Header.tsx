@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   const [color, setColor] = useState<boolean>(false);
 
   const changeBg = () => {
-    if (window.scrollY <= 90) {
+    if (window.scrollY <= 70) {
       return setColor(true);
     } else {
       return setColor(false);
