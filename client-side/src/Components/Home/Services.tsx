@@ -35,6 +35,26 @@ const Services: React.FC<ServiesProps> = () => {
         <h2 className="text-[34px] leading-[43px] font-semibold text-center pb-[77px]">
           Provide awesome <span className="text-secondary">services</span>
         </h2>
+        <div className="grid grid-cols-3 gap-[55px] ">
+          {serves.map(({ id, title, description, logo }) => (
+            <div
+              key={id}
+              className={`text-center pt-[34px] pb-[39px] px-[50px] rounded-[10px] ${
+                title === "Graphic design" ? "shadow-2xl" : ""
+              }`}
+            >
+              <div className="pb-[25px]">
+                <img className="w-[74px] h-[74px] mx-auto" src={logo} alt="" />
+              </div>
+              <h2 className="text-[20px] leading-[16px] tracking-[0.4 px] font-semibold text-primary pb-[18px]">
+                {title}
+              </h2>
+              <p className="text-[16px] leading-[28px] tracking-[0.4 px] font-light text-[#4c4c4c]">
+                {description}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
