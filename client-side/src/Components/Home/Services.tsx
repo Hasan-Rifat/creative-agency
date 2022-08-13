@@ -3,9 +3,9 @@ import service1 from "../../images/icons/service1.png";
 import service2 from "../../images/icons/service2.png";
 import service3 from "../../images/icons/service3.png";
 
-type ServiesProps = {};
+type ServicesProps = {};
 
-const Services: React.FC<ServiesProps> = () => {
+const Services: React.FC<ServicesProps> = () => {
   const serves = [
     {
       id: 1,
@@ -31,7 +31,7 @@ const Services: React.FC<ServiesProps> = () => {
   ];
   return (
     <section>
-      <div className="w-[1200px]  mx-auto py-[70px] ">
+      <div className="w-[1200px]  mx-auto py-[70px] pb-[114px]">
         <h2 className="text-[34px] leading-[43px] font-semibold text-center pb-[77px]">
           Provide awesome <span className="text-secondary">services</span>
         </h2>
@@ -39,8 +39,11 @@ const Services: React.FC<ServiesProps> = () => {
           {serves.map(({ id, title, description, logo }) => (
             <div
               key={id}
-              className={`text-center pt-[34px] pb-[39px] px-[50px] rounded-[10px] ${
-                title === "Graphic design" ? "shadow-2xl" : ""
+              className={`text-center pt-[34px] pb-[39px] px-[50px] rounded-[10px] 
+              ${
+                title === "Graphic design"
+                  ? " shadow-[0px_4px_80px_rgba(0,0,0,0.1)] "
+                  : ""
               }`}
             >
               <div className="pb-[25px]">

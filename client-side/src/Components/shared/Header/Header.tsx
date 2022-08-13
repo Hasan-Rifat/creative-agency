@@ -42,7 +42,9 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed left-0 right-0 top-0 ${
-        color ? "bg-transparent" : "bg-white"
+        color
+          ? "bg-transparent"
+          : "bg-white shadow-[0px_4px_80px_rgba(0,0,0,0.1)]"
       }`}
     >
       <div className="w-[1200px] mx-auto bg-transparent">
